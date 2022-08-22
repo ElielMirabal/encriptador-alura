@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/vector_logo.svg" alt="logo alura" class="logo-1">
+        <h1>Encriptador alura</h1>
+        <img src="img/logo 2.gif" alt="logo encrptador" class="logo-2">
+    </header>
+
+    <main class="contenedor">
+        <section>
+            <div class="area-texto">
+                <textarea class="texto" placeholder=" ⓘingrese el texto aqui Solo letras minusculas y sin acentos" onkeypress="return ((event.charCode >= 97 && event.charCode <= 122)||(event.charCode==32)) "></textarea>
+            </div>
+
+
+            <div class="button">
+                <button class="encriptar" type="submit" onclick="btnEncriptar()">encriptar</button>
+                <button class="desencriptar" type="submit" onclick="btnDesencriptar()">desenscriptar</button>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="area-texto">
+                <textarea class="mensaje"></textarea>
+            </div>
+
+
+            <div class="button">
+                <button onclick="copiar()">copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2022 Desarrollado por: Mirabal Eliel</p>
+
+        <nav>
+            <a href="https://www.linkedin.com/in/eliel-mirabal/"><img src="img/linkedin.png" alt="logo linkedin"></a>
+            <a href="https://github.com/ElielMirabal"><img src="img/github.png" alt="logo github"></a>
+            <a href="https://app.aluracursos.com/user/elielisachar"><img src="img/vector_logo.svg" alt=""> </a>
+        </nav>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
